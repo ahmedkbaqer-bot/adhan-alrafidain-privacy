@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الدعم — أذان الرافدين | Support</title>
+<style>
+  :root {
+    --primary: #1B3829;
+    --gold: #C9A227;
+    --bg: #F0EBE0;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --border: #d8d3c5;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, "Helvetica Neue", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    padding: 2rem 1rem;
+  }
+  .container { max-width: 760px; margin: 0 auto; }
+  header {
+    background: var(--primary);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  header h1 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+  header .gold { color: var(--gold); font-size: 0.85rem; letter-spacing: 2px; }
+  .lang-switch {
+    display: flex; gap: 0.5rem; justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  .lang-switch button {
+    background: var(--card); color: var(--primary);
+    border: 1px solid var(--border); border-radius: 999px;
+    padding: 0.5rem 1.25rem; cursor: pointer; font-weight: 700;
+  }
+  .lang-switch button.active { background: var(--primary); color: #fff; }
+  section { display: none; }
+  section.active { display: block; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 1.5rem 1.75rem; margin-bottom: 1rem;
+  }
+  h2 { color: var(--primary); font-size: 1.15rem; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--gold); }
+  h3 { color: var(--primary); font-size: 1rem; margin: 1rem 0 0.5rem; }
+  p, li { color: var(--text); font-size: 0.95rem; }
+  ul { padding-inline-start: 1.5rem; margin: 0.5rem 0; }
+  li { margin-bottom: 0.4rem; }
+  strong { color: var(--primary); }
+  a { color: var(--primary); font-weight: 600; }
+  .contact-card {
+    background: var(--primary); color: #fff;
+    text-align: center; padding: 2rem;
+  }
+  .contact-card h2 { color: #fff; border-color: var(--gold); }
+  .contact-card a { color: var(--gold); font-size: 1.2rem; }
+  footer {
+    text-align: center; color: var(--muted); font-size: 0.85rem;
+    margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="gold">ADHAN ALRAFIDAIN</div>
+    <h1>الدعم الفنّي &nbsp;·&nbsp; Support</h1>
+  </header>
+
+  <div class="lang-switch">
+    <button class="active" data-lang="ar">العربية</button>
+    <button data-lang="en">English</button>
+  </div>
+
+  <!-- ─────────── ARABIC ─────────── -->
+  <section id="ar" class="active" dir="rtl" lang="ar">
+    <div class="card contact-card">
+      <h2>📧 تواصل معنا</h2>
+      <p>
+        لأي سؤال، مشكلة، أو اقتراح:<br><br>
+        <a href="mailto:info@iqworkcommunity.com">info@iqworkcommunity.com</a><br><br>
+        <span style="font-size:0.85rem; opacity:0.8">نردّ على معظم الرسائل خلال 24-48 ساعة.</span>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>الأسئلة الشائعة</h2>
+
+      <h3>لماذا الأذان لا يرنّ عند إغلاق التطبيق على iPhone؟</h3>
+      <p>
+        Apple تفرض قيداً على التطبيقات: الصوت الكامل يعمل فقط عندما يكون التطبيق
+        مفتوحاً أو في الخلفية. عند إغلاق التطبيق كلياً، تستلم إشعاراً قصيراً
+        فقط (ليس صوت الأذان الكامل). هذا قيد من نظام iOS وليس عيب في التطبيق.
+        على Android لا يوجد هذا القيد.
+      </p>
+
+      <h3>كيف أُغيّر طريقة حساب المواقيت؟</h3>
+      <p>
+        من شاشة <strong>الإعدادات</strong> → اختر <strong>طريقة الحساب</strong>:
+      </p>
+      <ul>
+        <li>جامعة طهران (الافتراضي للعراق)</li>
+        <li>أم القرى (السعودية)</li>
+        <li>رابطة العالم الإسلامي</li>
+      </ul>
+
+      <h3>لماذا تختفي بعض الفئات في المكتبة عند اختيار أم القرى؟</h3>
+      <p>
+        عند اختيار طريقة "أم القرى" (السنّية)، نُخفي تلقائياً فئتي
+        "الزيارات" و "اللطميات" المخصصتين للمذهب الشيعي. يمكنك العودة لاختيار
+        طريقة "جامعة طهران" لإعادة عرضهما.
+      </p>
+
+      <h3>كيف أزيل الإعلانات نهائياً؟</h3>
+      <p>
+        من شاشة <strong>الإعدادات</strong> → اضغط <strong>الاشتراك المميز</strong>
+        ثم ادفع $0.99 (دفعة واحدة، لمرّة واحدة فقط). مربوط بحساب
+        Apple ID الخاص بك، ويمكن استعادته على أي جهاز تسجّل فيه دخولاً.
+      </p>
+
+      <h3>كيف أستعيد مشترياتي على جهاز جديد؟</h3>
+      <p>
+        من شاشة <strong>الإعدادات</strong> → اضغط <strong>استعادة المشتريات</strong>.
+        تأكّد أنك مسجّل دخولاً بنفس حساب Apple ID/Google الذي اشتريت به.
+      </p>
+
+      <h3>اتجاه القبلة يبدو غير دقيق</h3>
+      <p>
+        البوصلة تعتمد على مستشعر المغناطيس في هاتفك. لتحسين الدقة:
+      </p>
+      <ul>
+        <li>حرّك الهاتف على شكل رقم 8 في الهواء ثلاث مرات</li>
+        <li>ابتعد عن الأشياء المعدنية والأجهزة الإلكترونية</li>
+        <li>تأكّد أن إذن الموقع مُفعّل</li>
+      </ul>
+
+      <h3>كيف أحذف حسابي وبياناتي؟</h3>
+      <p>
+        من شاشة <strong>الإعدادات</strong> → اضغط <strong>تسجيل الخروج</strong>،
+        أو راسلنا على info@iqworkcommunity.com لطلب حذف الحساب نهائياً.
+        لمستخدمي Apple Sign-In: يمكنك أيضاً سحب الإذن من
+        <a href="https://appleid.apple.com">appleid.apple.com</a>.
+      </p>
+
+      <h3>المؤذن الذي اخترته لا يعمل</h3>
+      <p>
+        تأكّد من اتصال الإنترنت — صوت المؤذن يُحمَّل أول مرة من CDN. بعد التحميل
+        الأول يعمل أوفلاين. إذا استمرت المشكلة، راسلنا.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>تواصل خارج الإيميل</h2>
+      <p>
+        لو تفضّل تواصلاً أسرع، يمكنك:
+      </p>
+      <ul>
+        <li>الرد على متجر التطبيقات (تقييمنا وكتابة تعليق فيه ملاحظتك)</li>
+        <li>الرسالة عبر الإيميل: <a href="mailto:info@iqworkcommunity.com">info@iqworkcommunity.com</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─────────── ENGLISH ─────────── -->
+  <section id="en" dir="ltr" lang="en">
+    <div class="card contact-card">
+      <h2>📧 Contact Us</h2>
+      <p>
+        For any question, issue, or suggestion:<br><br>
+        <a href="mailto:info@iqworkcommunity.com">info@iqworkcommunity.com</a><br><br>
+        <span style="font-size:0.85rem; opacity:0.8">We reply to most messages within 24-48 hours.</span>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>Why doesn't the adhan play when the app is closed on iPhone?</h3>
+      <p>
+        Apple imposes a restriction: full audio playback only works when the app
+        is open or in the background. When the app is fully closed, you receive
+        a short notification only (not the full adhan sound). This is an iOS
+        system limitation, not an app bug. There is no such restriction on Android.
+      </p>
+
+      <h3>How do I change the calculation method?</h3>
+      <p>
+        From the <strong>Settings</strong> screen → select
+        <strong>Calculation method</strong>:
+      </p>
+      <ul>
+        <li>University of Tehran (default for Iraq)</li>
+        <li>Umm al-Qura (Saudi Arabia)</li>
+        <li>Muslim World League</li>
+      </ul>
+
+      <h3>Why do some library categories disappear when I choose Umm al-Qura?</h3>
+      <p>
+        When you select the "Umm al-Qura" (Sunni) method, we automatically hide
+        the "Ziyarat" and "Latmiya" categories specific to the Shia tradition.
+        You can switch back to "University of Tehran" to see them again.
+      </p>
+
+      <h3>How do I remove ads permanently?</h3>
+      <p>
+        From the <strong>Settings</strong> screen → tap
+        <strong>Premium Subscription</strong>, then pay $0.99 (one-time, single
+        purchase). It's tied to your Apple ID and can be restored on any device
+        where you sign in.
+      </p>
+
+      <h3>How do I restore purchases on a new device?</h3>
+      <p>
+        From the <strong>Settings</strong> screen → tap
+        <strong>Restore Purchases</strong>. Make sure you're signed in with the
+        same Apple ID/Google account used at purchase.
+      </p>
+
+      <h3>Qibla direction seems inaccurate</h3>
+      <p>
+        The compass relies on your phone's magnetometer. To improve accuracy:
+      </p>
+      <ul>
+        <li>Move the phone in a figure-8 motion three times</li>
+        <li>Move away from metal objects and electronics</li>
+        <li>Ensure location permission is granted</li>
+      </ul>
+
+      <h3>How do I delete my account and data?</h3>
+      <p>
+        From the <strong>Settings</strong> screen → tap <strong>Sign Out</strong>,
+        or email us at info@iqworkcommunity.com to request permanent account
+        deletion. For Apple Sign-In users: you can also revoke access from
+        <a href="https://appleid.apple.com">appleid.apple.com</a>.
+      </p>
+
+      <h3>The muezzin I selected doesn't play</h3>
+      <p>
+        Check your internet connection — muezzin audio is downloaded from CDN
+        on first use. After the first download it works offline. If the issue
+        persists, contact us.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Other Ways to Reach Us</h2>
+      <p>You can also:</p>
+      <ul>
+        <li>Reply via the App Store (rate the app and add your feedback in the review)</li>
+        <li>Email us at: <a href="mailto:info@iqworkcommunity.com">info@iqworkcommunity.com</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Adhan Alrafidain · <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.lang-switch button');
+  buttons.forEach(b => b.addEventListener('click', () => {
+    buttons.forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    b.classList.add('active');
+    document.getElementById(b.dataset.lang).classList.add('active');
+    document.documentElement.lang = b.dataset.lang;
+    document.documentElement.dir = b.dataset.lang === 'ar' ? 'rtl' : 'ltr';
+  }));
+</script>
+</body>
+</html>
