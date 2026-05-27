@@ -3,48 +3,339 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>أذان الرافدين — Adhan Alrafidain</title>
+<title>سياسة الخصوصية — أذان الرافدين | Privacy Policy</title>
 <style>
+  :root {
+    --primary: #1B3829;
+    --gold: #C9A227;
+    --bg: #F0EBE0;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --border: #d8d3c5;
+    --card: #ffffff;
+  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
-    background: linear-gradient(135deg, #1B3829 0%, #0E2118 100%);
-    color: #fff;
-    min-height: 100vh;
-    display: flex; align-items: center; justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, "Helvetica Neue", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
     padding: 2rem 1rem;
+  }
+  .container { max-width: 760px; margin: 0 auto; }
+  header {
+    background: var(--primary);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
     text-align: center;
   }
-  .container { max-width: 480px; }
-  .logo { font-size: 4rem; margin-bottom: 1rem; }
-  h1 { color: #C9A227; font-size: 0.85rem; letter-spacing: 3px; margin-bottom: 0.5rem; }
-  h2 { font-size: 1.8rem; margin-bottom: 2rem; }
-  .links { display: flex; flex-direction: column; gap: 1rem; }
-  a {
-    display: block;
-    background: rgba(255,255,255,0.1);
-    color: #fff;
-    padding: 1rem 1.5rem;
-    border-radius: 14px;
-    text-decoration: none;
-    border: 1px solid rgba(255,255,255,0.2);
-    font-weight: 600;
-    transition: background 0.2s;
+  header h1 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+  header .gold { color: var(--gold); font-size: 0.85rem; letter-spacing: 2px; }
+  .lang-switch {
+    display: flex; gap: 0.5rem; justify-content: center;
+    margin-bottom: 1.5rem;
   }
-  a:hover { background: rgba(255,255,255,0.18); }
-  .meta { color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-top: 2rem; }
+  .lang-switch button {
+    background: var(--card); color: var(--primary);
+    border: 1px solid var(--border); border-radius: 999px;
+    padding: 0.5rem 1.25rem; cursor: pointer; font-weight: 700;
+  }
+  .lang-switch button.active { background: var(--primary); color: #fff; }
+  section { display: none; }
+  section.active { display: block; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 1.5rem 1.75rem; margin-bottom: 1rem;
+  }
+  h2 { color: var(--primary); font-size: 1.15rem; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--gold); }
+  h3 { color: var(--primary); font-size: 1rem; margin: 1rem 0 0.5rem; }
+  p, li { color: var(--text); font-size: 0.95rem; }
+  ul { padding-inline-start: 1.5rem; margin: 0.5rem 0; }
+  li { margin-bottom: 0.4rem; }
+  strong { color: var(--primary); }
+  .meta { color: var(--muted); font-size: 0.85rem; margin-top: 0.5rem; }
+  a { color: var(--primary); font-weight: 600; }
+  footer {
+    text-align: center; color: var(--muted); font-size: 0.85rem;
+    margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+  }
+  table { width: 100%; border-collapse: collapse; margin: 0.5rem 0; }
+  th, td { border: 1px solid var(--border); padding: 0.5rem; text-align: start; font-size: 0.9rem; }
+  th { background: #f6f0e2; color: var(--primary); }
+  [dir="ltr"] { text-align: left; }
+  [dir="rtl"] { text-align: right; }
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="logo">🕌</div>
-  <h1>ADHAN ALRAFIDAIN</h1>
-  <h2>أذان الرافدين</h2>
-  <div class="links">
-    <a href="privacy.html">🔒 Privacy Policy · سياسة الخصوصية</a>
-    <a href="support.html">📧 Support · الدعم الفنّي</a>
+  <header>
+    <div class="gold">ADHAN ALRAFIDAIN</div>
+    <h1>سياسة الخصوصية &nbsp;·&nbsp; Privacy Policy</h1>
+  </header>
+
+  <div class="lang-switch">
+    <button class="active" data-lang="ar">العربية</button>
+    <button data-lang="en">English</button>
   </div>
-  <p class="meta">© 2026 Adhan Alrafidain · info@iqworkcommunity.com</p>
+
+  <!-- ─────────── ARABIC ─────────── -->
+  <section id="ar" class="active" dir="rtl" lang="ar">
+    <div class="card">
+      <h2>1. مقدّمة</h2>
+      <p>
+        تطبيق <strong>أذان الرافدين</strong> ("التطبيق") تطبيق إسلامي عراقي مجاني
+        لمواقيت الصلاة والقبلة والمكتبة الصوتية. نحن نحترم خصوصيتك ونلتزم بحماية
+        بياناتك. هذه السياسة تشرح كيف نتعامل مع بياناتك عند استخدامك للتطبيق
+        على iOS و Android.
+      </p>
+      <p class="meta">آخر تحديث: 23 مايو 2026</p>
+    </div>
+
+    <div class="card">
+      <h2>2. البيانات التي نجمعها</h2>
+
+      <h3>أ) بيانات الموقع</h3>
+      <p>
+        نطلب إذن الوصول إلى موقعك (<em>عند استخدام التطبيق فقط</em>) لحساب
+        مواقيت الصلاة الدقيقة واتجاه القبلة. يُحسب كل شيء محلياً على جهازك —
+        <strong>لا نُرسل موقعك إلى خوادمنا</strong>.
+      </p>
+
+      <h3>ب) بيانات الحساب (اختيارية)</h3>
+      <p>عندما تختار تسجيل الدخول لمزامنة الإعدادات أو الاشتراك المميز:</p>
+      <ul>
+        <li>على iOS: عبر <strong>Sign in with Apple</strong> — قد يُعطينا Apple إيميل مستعار للتحويل</li>
+        <li>على Android: عبر <strong>Google Sign-In</strong> — نستلم اسم العرض والإيميل</li>
+      </ul>
+      <p>تُخزَّن هذه البيانات في Firebase Authentication ولا تُشارك مع طرف ثالث.</p>
+
+      <h3>ج) بيانات تشخيصية وتحليلية</h3>
+      <p>
+        نستخدم <strong>Firebase Analytics</strong> و <strong>Crashlytics</strong>
+        لجمع بيانات مجهولة عن استخدام التطبيق وأخطاء التشغيل لتحسين الأداء.
+        لا تتضمّن هذه البيانات هويتك الشخصية.
+      </p>
+
+      <h3>د) معرّف الإعلانات</h3>
+      <p>
+        إذا منحت إذن "تتبّع التطبيق" (App Tracking Transparency) على iOS،
+        يستخدم <strong>Google AdMob</strong> معرّف جهازك الإعلاني (IDFA)
+        لعرض إعلانات أكثر ملاءمة. يمكنك رفض هذا الإذن أو سحبه في أي وقت من
+        إعدادات نظام iOS.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>3. الخدمات الخارجية</h2>
+      <table>
+        <thead><tr><th>الخدمة</th><th>الغرض</th><th>الموفّر</th></tr></thead>
+        <tbody>
+          <tr><td>Firebase Auth</td><td>تسجيل دخول وحفظ المستخدم</td><td>Google</td></tr>
+          <tr><td>Firebase Analytics</td><td>إحصاءات الاستخدام</td><td>Google</td></tr>
+          <tr><td>Firestore</td><td>تخزين المناسبات العامة</td><td>Google</td></tr>
+          <tr><td>Google AdMob</td><td>عرض الإعلانات</td><td>Google</td></tr>
+          <tr><td>RevenueCat</td><td>إدارة الاشتراك المميز</td><td>RevenueCat</td></tr>
+          <tr><td>Apple Maps</td><td>خريطة اتجاه القبلة (iOS)</td><td>Apple</td></tr>
+          <tr><td>Google Maps</td><td>خريطة اتجاه القبلة (Android)</td><td>Google</td></tr>
+          <tr><td>Aladhan API</td><td>(احتياطي) لحساب المواقيت</td><td>Aladhan.com</td></tr>
+        </tbody>
+      </table>
+      <p>كل خدمة تخضع لسياسة الخصوصية الخاصة بها.</p>
+    </div>
+
+    <div class="card">
+      <h2>4. التخزين المحلي</h2>
+      <p>
+        نخزّن إعداداتك (المدينة، المؤذن المختار، الثيم، اللغة، تذكيرات المناسبات)
+        محلياً على جهازك فقط عبر <strong>AsyncStorage</strong>. لا ترسَل هذه
+        البيانات إلى خوادمنا.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. الإعلانات والاشتراك المميز</h2>
+      <p>
+        التطبيق مجاني ويُموَّل بإعلانات Google AdMob. تستطيع إزالة الإعلانات
+        نهائياً بدفعة واحدة قدرها $0.99 (Premium). الدفع يتم عبر متجر التطبيقات
+        (App Store / Google Play) — لا نستلم بيانات بطاقتك مباشرة.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. حقوقك</h2>
+      <ul>
+        <li><strong>حق الوصول</strong>: يمكنك طلب نسخة من بياناتك بمراسلتنا</li>
+        <li><strong>حق الحذف</strong>: يمكنك حذف حسابك من شاشة الإعدادات أو بمراسلتنا</li>
+        <li><strong>حق الانسحاب من الإعلانات الموجّهة</strong>: عبر إعدادات نظام iOS/Android</li>
+        <li><strong>حذف حساب Apple</strong>: من <a href="https://appleid.apple.com">appleid.apple.com</a> → Apps Using Apple ID → Adhan Alrafidain → Stop Using</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>7. الأطفال</h2>
+      <p>
+        التطبيق مناسب لجميع الأعمار، لكنه لا يستهدف الأطفال دون 13 سنة.
+        لا نجمع عمداً معلومات شخصية من الأطفال. إذا اكتشفت أن طفلك زوّدنا
+        ببيانات شخصية، راسلنا فوراً.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>8. تغييرات على السياسة</h2>
+      <p>
+        قد نُحدّث هذه السياسة من حين لآخر. التحديثات تنشر هنا مع تاريخ آخر تعديل.
+        استمرارك في استخدام التطبيق بعد التحديث يعني قبولك للسياسة الجديدة.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>9. التواصل</h2>
+      <p>
+        لأي استفسار حول الخصوصية أو لممارسة حقوقك:<br>
+        📧 <a href="mailto:info@iqworkcommunity.com">info@iqworkcommunity.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────── ENGLISH ─────────── -->
+  <section id="en" dir="ltr" lang="en">
+    <div class="card">
+      <h2>1. Introduction</h2>
+      <p>
+        <strong>Adhan Alrafidain</strong> ("the App") is a free Islamic Iraqi app
+        for prayer times, qibla direction, and an audio library. We respect your
+        privacy and are committed to protecting your data. This policy explains
+        how we handle your data when you use the App on iOS and Android.
+      </p>
+      <p class="meta">Last updated: May 23, 2026</p>
+    </div>
+
+    <div class="card">
+      <h2>2. Data We Collect</h2>
+
+      <h3>a) Location Data</h3>
+      <p>
+        We request location access (<em>when in use only</em>) to compute accurate
+        prayer times and qibla direction. All calculations happen locally on
+        your device — <strong>we do not transmit your location to our servers</strong>.
+      </p>
+
+      <h3>b) Account Data (optional)</h3>
+      <p>When you choose to sign in to sync settings or unlock Premium:</p>
+      <ul>
+        <li>On iOS: via <strong>Sign in with Apple</strong> — Apple may provide a relay email</li>
+        <li>On Android: via <strong>Google Sign-In</strong> — we receive display name and email</li>
+      </ul>
+      <p>This data is stored in Firebase Authentication and not shared with third parties.</p>
+
+      <h3>c) Diagnostic & Analytics Data</h3>
+      <p>
+        We use <strong>Firebase Analytics</strong> and <strong>Crashlytics</strong>
+        to collect anonymous app usage and crash data to improve performance.
+        This data does not personally identify you.
+      </p>
+
+      <h3>d) Advertising Identifier</h3>
+      <p>
+        If you grant App Tracking Transparency permission on iOS,
+        <strong>Google AdMob</strong> uses your device's advertising identifier
+        (IDFA) to show more relevant ads. You can decline or revoke this
+        permission anytime from iOS system settings.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>3. Third-Party Services</h2>
+      <table>
+        <thead><tr><th>Service</th><th>Purpose</th><th>Provider</th></tr></thead>
+        <tbody>
+          <tr><td>Firebase Auth</td><td>Login & user storage</td><td>Google</td></tr>
+          <tr><td>Firebase Analytics</td><td>Usage statistics</td><td>Google</td></tr>
+          <tr><td>Firestore</td><td>Public occasions storage</td><td>Google</td></tr>
+          <tr><td>Google AdMob</td><td>Ad serving</td><td>Google</td></tr>
+          <tr><td>RevenueCat</td><td>Premium subscription management</td><td>RevenueCat</td></tr>
+          <tr><td>Apple Maps</td><td>Qibla direction map (iOS)</td><td>Apple</td></tr>
+          <tr><td>Google Maps</td><td>Qibla direction map (Android)</td><td>Google</td></tr>
+          <tr><td>Aladhan API</td><td>(Fallback) prayer time calculation</td><td>Aladhan.com</td></tr>
+        </tbody>
+      </table>
+      <p>Each service is governed by its own privacy policy.</p>
+    </div>
+
+    <div class="card">
+      <h2>4. Local Storage</h2>
+      <p>
+        We store your settings (city, selected muezzin, theme, language, custom
+        occasion reminders) locally on your device only via <strong>AsyncStorage</strong>.
+        This data is not transmitted to our servers.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. Advertising & Premium</h2>
+      <p>
+        The App is free and funded by Google AdMob ads. You can permanently
+        remove ads with a one-time $0.99 purchase (Premium). Payment is processed
+        through the App Store / Google Play — we never receive your payment
+        card data directly.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>6. Your Rights</h2>
+      <ul>
+        <li><strong>Right of access</strong>: Request a copy of your data by contacting us</li>
+        <li><strong>Right to deletion</strong>: Delete your account from the Settings screen or by contacting us</li>
+        <li><strong>Right to opt-out of targeted advertising</strong>: via iOS/Android system settings</li>
+        <li><strong>Apple account deletion</strong>: from <a href="https://appleid.apple.com">appleid.apple.com</a> → Apps Using Apple ID → Adhan Alrafidain → Stop Using</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>7. Children</h2>
+      <p>
+        The App is suitable for all ages but is not directed at children under 13.
+        We do not knowingly collect personal information from children. If you
+        discover your child has provided us personal data, contact us immediately.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>8. Changes to This Policy</h2>
+      <p>
+        We may update this policy from time to time. Updates will be posted here
+        with a revised "Last updated" date. Continued use of the App after an
+        update means you accept the new policy.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>9. Contact</h2>
+      <p>
+        For any privacy inquiries or to exercise your rights:<br>
+        📧 <a href="mailto:info@iqworkcommunity.com">info@iqworkcommunity.com</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Adhan Alrafidain · <a href="support.html">Support</a>
+  </footer>
 </div>
+
+<script>
+  const buttons = document.querySelectorAll('.lang-switch button');
+  buttons.forEach(b => b.addEventListener('click', () => {
+    buttons.forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    b.classList.add('active');
+    document.getElementById(b.dataset.lang).classList.add('active');
+    document.documentElement.lang = b.dataset.lang;
+    document.documentElement.dir = b.dataset.lang === 'ar' ? 'rtl' : 'ltr';
+  }));
+</script>
 </body>
 </html>
